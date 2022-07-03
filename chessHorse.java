@@ -40,8 +40,9 @@ class chessHorse {
     }
     public static void main(String [] args) {
         long time = System.currentTimeMillis();
+        int number = 5;// размер доски
         int n = 0;
-        int [][] chessBoard = new int[5][5];
+        int [][] chessBoard = new int[number][number];
         int [][] moves = {{1, -2}, {2, -1}, {2, 1}, {1, 2}, {-1, 2}, {-2, 1}, {-2, -1}, {-1, -2}};
         setHorse(1, 1, chessBoard, moves, n);
         printBoard(chessBoard);
